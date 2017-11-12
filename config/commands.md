@@ -2,8 +2,8 @@
 
 ## cd ##
 
-cd ../../xampp/htdocs/miyaggi/miyComingSoon
+cd ../../xampp/htdocs/miyagii/miyComingSoon
 
 ## cd and Start Node Server ##
 
-cd ../../xampp/htdocs/miyaggi/miyComingSoon && npm start
+cd ../../xampp/htdocs/miyagii/miyComingSoon && npm start
