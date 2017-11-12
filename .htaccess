@@ -1,0 +1,37 @@
+ErrorDocument 404 404.php
+
+RewriteEngine on
+
+#Force non-www:
+RewriteCond %{HTTP_HOST} ^www\.ibuildweb\.solutions [NC]
+RewriteRule ^(.*)$ http://ibuildweb.solutions/$1 [L,R=301]
+
+#Blocks common botnet scripts that automatically look for software vulnerabilities:
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteRule .* ? [F,L]
+
+<FilesMatch "\.(css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|png|pdf|swf|txt)$">
+	<IfModule mod_expires.c>
+		ExpiresActive Off
+	</IfModule>
+	<IfModule mod_headers.c>
+		FileETag None
+		Header unset ETag
+		Header unset Pragma
+		Header unset Cache-Control
+		Header unset Last-Modified
+		Header set Pragma "no-cache"
+		Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+		Header set Expires "Mon, 10 Apr 1972 00:00:00 GMT"
+	</IfModule>
+</FilesMatch>
+
+#Hides PHP version number in http header:
+<ifModule mod_headers.c>
+Header unset X-Powered-By
+</IfModule>
+
+#Set XSS Protection header:
+<IfModule mod_headers.c>
+Header set X-XSS-Protection "1; mode=block"
+</IfModule>
