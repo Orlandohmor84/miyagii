@@ -18,6 +18,7 @@
 * NodeJs
 * jQuery
 * Bootstrap
+* Unify v1.9.8
 
 ### Dev Dependencies ###
 
