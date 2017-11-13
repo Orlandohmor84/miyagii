@@ -3,16 +3,15 @@
 ## What is this repository for ##
 
 * Miyagii Coming Soon Page
+* Hosted on Github Pages
 * Version 0.0
 
 ## How do I get set up ##
 
-* Clone repo to start [https://Orlandohmor@bitbucket.org/ibuildwebs/miycomingsoon.git](https://Orlandohmor@bitbucket.org/ibuildwebs/miycomingsoon.git)
+* Clone repo to start [https://github.com/Orlandohmor84/miyagii.git](https://github.com/Orlandohmor84/miyagii.git)
 * Install dependencies
-* Development - Checkout from stage. Create new branch. Code. Run default Gulp task. Test. 
-* Deployment -  Run Gulp build script. Push. Merge with stage. Stage to be merged with Master when all commits ready for release. Semantic version control with tags using major.minor.patch methodology. FTP.
-
-## Dependencies ##
+* Development - Checkout from stage. Create new branch. Code. Run default Gulp task. Test.
+* Deployment -  Run Gulp build script. Merge with master branch. Push to Github remote. Semantic version control with tags using major.minor.patch methodology. FTP.
 
 ### Vendors ###
 
@@ -20,7 +19,7 @@
 * jQuery
 * Bootstrap
 
-### Modules ###
+### Dev Dependencies ###
 
 * babel-preset-es2015
 * fs
@@ -29,6 +28,7 @@
 * gulp-babel
 * gulp-clean-css
 * gulp-concat
+* gulp-htmlmin
 * gulp-image-resize
 * gulp-imagemin
 * gulp-less
@@ -36,14 +36,17 @@
 * gulp-minify
 * gulp-plumber
 * gulp-real-favicon
-* gulp-rev
 * gulp-sourcemaps
 * gulp-sync
 * gulp-uglify
+* gulp-uncss
 * imagemin-jpeg-recompress
 * imagemin-pngquant
 * less-plugin-autoprefix
 * require-dir
+
+### Dependencies (for local dev server) ###
+
 * express
 * httpdispatcher
 * morgan
@@ -51,7 +54,7 @@
 
 ## Release History ##
 
-* v0.0.0 - Coming Soon!
+* v0.0.0 - 11/13/17 - Prototype.
 
 ## Licenses ##
 
