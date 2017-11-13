@@ -55,6 +55,7 @@
 
 ## Release History ##
 
+* v0.0.1 - 11/13/17 - Design Enhancements.
 * v0.0.0 - 11/13/17 - Prototype.
 
 ## Licenses ##
