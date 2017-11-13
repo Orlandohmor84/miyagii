@@ -39,11 +39,3 @@ Thumbs.db
 # Node_Modules #
 ####################
 node_modules/
-
-# Images #
-####################
-*.png
-*.svg
-*.jpg
-*.jpeg
-*.gif
