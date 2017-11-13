@@ -25,6 +25,7 @@
 
 	<!-- Web Fonts -->
 	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral+SC">
 
 	<!-- CSS Global Compulsory-->
 	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -54,9 +55,12 @@
 			<!-- Coming Soon Content -->
 			<div class="row">
 				<div class="col-md-12 coming-soon">
-					<h1>Miyagii</h1>
-					<p>Experience the future of social interaction with a purpose. Sign up now to learn more and be part of the groundbreaking beginning.</p>
-
+					<div class="wow slideInLeft" data-wow-duration="5s">
+						<h1>Miyagii</h1>
+					</div><!-- /.wow -->
+					<div class="wow fadeInDown">
+						<p>Experience the future of <strong>social interaction with a purpose</strong>. Sign up now to learn more and be part of the groundbreaking beginning.</p>
+					</div>
 					<!-- Begin MailChimp Signup Form -->
 					<div id="mc_embed_signup">
 						<center>
@@ -71,8 +75,9 @@
 						</center>
 						
 					</div><!-- /#mc_embed_signup -->
-
-					<h2>Coming Soon!</h2>
+					<div class="wow slideInRight" data-wow-delay="5s" data-wow-duration="0.2s">
+						<h2>Coming Soon!</h2>
+					</div><!-- /.wow -->
 
 				</div><!-- /.col -->
 			</div><!-- /.row -->
@@ -90,20 +95,22 @@
 	</div><!-- /.coming-soon-wrapper -->
 
 	<!-- JS Global Compulsory -->
-	<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
-	<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/plugins/jquery/jquery.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<!-- JS Implementing Plugins -->
-	<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-	<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-	<script type="text/javascript" src="assets/plugins/backstretch/jquery.backstretch.min.js"></script>
+	<script src="assets/plugins/back-to-top.js"></script>
+	<script src="assets/plugins/smoothScroll.js"></script>
+	<script src="assets/plugins/backstretch/jquery.backstretch.min.js"></script>
+	<script src="assets/plugins/wow-animations/js/wow.min.js"></script>
 	<!-- JS Customization -->
-	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script src="assets/js/custom.js"></script>
 	<!-- JS Page Level -->
-	<script type="text/javascript" src="assets/js/app.js"></script>
-	<script type="text/javascript">
+	<script src="assets/js/app.js"></script>
+	<script>
 		jQuery(document).ready(function() {
 			App.init();
+			new WOW().init();
 		});
 	</script>
 

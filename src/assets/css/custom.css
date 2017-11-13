@@ -1,6 +1,14 @@
 .coming-soon {
     background: rgba(0,0,0,0.5);
 }
+.coming-soon h1 {
+    font-family: 'Spectral SC', serif;
+    color: #add8e6;
+}
+.coming-soon h2 {
+    color: #add8e6;
+    text-transform: uppercase;
+}
 .green {
     color: #72c02c;
 }
@@ -15,4 +23,10 @@
 }
 .sticky-footer {
     position: absolute;
+}
+strong {
+    color: #add8e6;
+}
+.wow {
+    visibility: hidden;
 }
